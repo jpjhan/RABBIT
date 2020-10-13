@@ -18,15 +18,14 @@ RABBIT supports various state-of-the-art multi-lens structured cameras as listed
 Manufacture|Tetracam | Micasense Rededge | Parrot 
 :------------: |:------------: | :-------------: | :------------: 
  Camera|![](/Images/MCA_12.png) |![](/Images/Altum.png)|![](/Images/Sequoia.png) 
- Model|MCA-4, MCA-6, MCA-12|MX, Altum|Sequoia|Duo Pro R
- Spectral| BLU, GRE, RED, REG, NIR|BLU, GRE, RED, REG, NIR| GRE, RED, REG, NIR|RGB + TIR
+ Models|MCA-4, MCA-6, MCA-12|MX, Altum|Sequoia|Duo Pro R
+ Multispectral| BLU, GRE, RED, REG, NIR|BLU, GRE, RED, REG, NIR| GRE, RED, REG, NIR|RGB + TIR
 
 **Please contact us if you need a different model.*
 ## Features
 ### 1. Sucessful Image Matching
  RABBIT utilizes a novel **N-SURF** matching that can extract more features and increase the amount of correct matches on heterogenous images. This is a crucial step to connect images and estimnate the image transformation coefficients.
  
-[Read more about N-SURF](https://jpjhan.github.io/posts/851c8651)
 
 ### 2. Proper Image Transform
   RABBIT adopts an **extended projective transform (EPT)** that can correct the differences of viewpoints and lens distortion effects. Compared to **affine transform (AT)** and **projective transform (PT)**, EPT has the smallest residuals of MREs and best accuracy of co-registration results.
