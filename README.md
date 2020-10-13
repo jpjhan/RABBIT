@@ -122,5 +122,5 @@ If RABBIT help in your research/projects, please consider citing the following p
 
 ## Contacts
 If you have any questions about RABBIT, please contact Dr. Jyun-Ping Jhan
-mailto:jyunpingjhan@geomatics.ncku.edu.tw  
+jyunpingjhan@geomatics.ncku.edu.tw  
 
