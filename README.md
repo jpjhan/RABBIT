@@ -50,12 +50,14 @@ RABBIT can run under multi-thread CPU or GPU. The comparisons of processing effi
 	CPU: Intel(R) Core(TM) i7-8700 3.2 GHz
 	GPU: NVIDIA Geforce GTX TITAN X   
     
-Camera|Tetracam MCA-12| Micasense Altum |Parrot Sequoia | FLIR Duo Pro R
-:------------: | :-------------: | :-------------:| :-------------:| :-------------:
-Image Resolution| 1280 X 1024 | 2064 X 1544 | 1280 X 960 | 640 X 512
- Bands X Groups|12 X 100|5 X 100|4 X 100|2 X 100
- Multi-thread CPU|36 min.|31 min.|8 min.| 6min.
- GPU|19 min.|8 min.|4 min.|2 min.
+Camera|Tetracam MCA-12| Micasense Altum |Parrot Sequoia 
+:------------: | :-------------: | :-------------:| :-------------:
+Image Resolution| 1280 X 1024 | 2064 X 1544 | 1280 X 960 
+ Bands X Groups|12 X 100|5 X 100|4 X 100
+ Independent in Multi-thread CPU|65 min.|62 min.|17 min.
+ Independent in GPU|13 min.|14 min.|3 min.
+ Batch in Multi-thread CPU|2 min.|2 min.|2 min.
+ Batch in GPU|2 min.|2 min.|2 min.
  
 ### 4. Results
 Camera|MCA-12 | Altum| Sequoia 
@@ -86,16 +88,14 @@ Chose Camera Model | Select Image Patch | Run RABBIT
  ![](/Images/NewPorject_1.png)|![](/Images/NewPorject_2.png)|![](/Images/Run.png) 
 ### 4. Settings<br>
 **4.1 Feature Points**
-  The default value is 1% of the image resolution. Change to a higher or lower value to increase matching reliablity or reduce processing time. However, we do not recommend adjusting it, because:
-  (1) RABBIT will automatically adjust this value, if there are too few matching points that leading to co-registration failure.
-  (2) A higher value of feature points will not siginficantly affect the processing time in GPU mode, but it does in CPU mode.
+  The default value is 2% of the image resolution. Change to a higher or lower value to increase matching reliablity or reduce processing time. However, we do not recommend adjusting it, because a higher value of feature points will not siginficantly affect the processing time in GPU mode, but it does in CPU mode.
   
 **4.2 Independent vs. Batch**
 **Independent** is to conduct N-SURF matching and MPT on each group of images, which can obtain more accurate and reliable reuslts.
-**Batch** is to use same transformation coefficients from one corrected group of images, which can achive ultra-speed processing efficiency. 
+**Batch** is to use same coefficients from one corrected group of images, which can achive ultra-speed processing efficiency. 
 
 ***When to use batch mode***
-If all lenses of camera are highly synchronized, have same shuter speed, and the observation object distances are constant, we can treat the imaging geometry among all groups of images are the same. Therefore, we can simply choose one group of image for correction and then apply the obtained coefficients to the rest groups of images. 
+If all lenses of camera are highly synchronized, have same shutter speed, and the observation object distances are constant, we can treat the imaging geometry among all groups of images are the same. Therefore, we can simply choose one group of image for correction and then apply the obtained coefficients to the rest groups of images. 
 
 ** Tips: Choose one group of images that have rich texture and high contrast for correction.
 
