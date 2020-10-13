@@ -1,5 +1,5 @@
 
-A generalized tool for accurate and efficient multi-lens multispectral camera image registration
+# A generalized tool for accurate and efficient multi-lens multispectral camera image registration
 
 
 Due to multi-lens camera utilizes each lens to record separate heterogeneous images, such as visible (RGB), multispectral (MS), or thermal (TIR) information, the differences of viewpoints and lens distortion leading to significant ghost effects of original images. To recover one-sensor geometry for precise spectral measurements, it requires band co-registration processing to correct the misregistration errors (MREs).
@@ -15,9 +15,9 @@ MREs of Original Image | Results of RABBIT
 ## Supported Multi-lens Camera 
 RABBIT supports various state-of-the-art multi-lens structured cameras as listed below.<br>
 
-Manufacture|Tetracam | Micasense Rededge | Parrot | FLIR
-:------------: |:------------: | :-------------: | :------------: | :------------:
- Camera|![](/Images/MCA_12.png) |![](/Images/Altum.png)|![](/Images/Sequoia.png) |![](/Images/FLIR_DUO_PRO_R.png) 
+Manufacture|Tetracam | Micasense Rededge | Parrot 
+:------------: |:------------: | :-------------: | :------------: 
+ Camera|![](/Images/MCA_12.png) |![](/Images/Altum.png)|![](/Images/Sequoia.png) 
  Model|MCA-4, MCA-6, MCA-12|MX, Altum|Sequoia|Duo Pro R
  Spectral| BLU, GRE, RED, REG, NIR|BLU, GRE, RED, REG, NIR| GRE, RED, REG, NIR|RGB + TIR
 
@@ -58,10 +58,10 @@ Image Resolution| 1280 X 1024 | 2064 X 1544 | 1280 X 960 | 640 X 512
  GPU|19 min.|8 min.|4 min.|2 min.
  
 ### 4. Results
-Camera|MCA-12 | Altum| Sequoia | Duo Pro R
-:------------: |:------------: | :-------------: | :------------: | :------------:
- Original|![](/Images/MCA_Original.gif) |![](/Images/Altum_Original.gif)|![](/Images/Sequoia_Original.gif) |![](/Images/FLIR_Original.gif) 
- RABBIT |![](/Images/MCA_RABBIT.gif) |![](/Images/Altum_RABBIT.gif)|![](/Images/Sequoia_RABBIT.gif) |![](/Images/FLIR_RABBIT.gif) 
+Camera|MCA-12 | Altum| Sequoia 
+:------------: |:------------: | :-------------: | :------------: 
+ Original|![](/Images/MCA_Original.gif) |![](/Images/Altum_Original.gif)|![](/Images/Sequoia_Original.gif) 
+ RABBIT |![](/Images/MCA_RABBIT.gif) |![](/Images/Altum_RABBIT.gif)|![](/Images/Sequoia_RABBIT.gif) 
 
 ## How to Use
 RABBIT is easy to use within three simple steps.
