@@ -41,9 +41,9 @@ AT| PT| EPT
 ### 3. High Accuracy
  RABBIT can achieve 0.2-0.7 pixels band co-registration accuracy.
  
-MCA-12| Altum| Sequoia|Duo Pro R
-:------------: | :-------------: | :-------------:| :-------------:
-![](/Images/Accuracy_MCA.png)|![](/Images/Accuracy_Altum.png)|![](/Images/Accuracy_Sequoia.png)|![](/Images/Accuracy_TIR.png)
+MCA-12| Altum| Sequoia
+:------------: | :-------------: | :-------------:
+![](/Images/Accuracy_MCA.png)|![](/Images/Accuracy_Altum.png)|![](/Images/Accuracy_Sequoia.png)
 ### 4. High Efficiency
 RABBIT can run under multi-thread CPU or GPU. The comparisons of processing efficiency are listed in the following table.	
 
