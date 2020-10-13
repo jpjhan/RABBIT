@@ -8,7 +8,7 @@ Based on our years research, we have developed a generalized tool, named **Robus
  
 MREs of Original Image | Results of RABBIT
 :------------: | :-------------:
- ![](/RABBIT/Altum_MRE.png) |![](/RABBIT/Altum_Co.png) 
+ ![](/Images/Altum_MRE.png) |![](/Images/Altum_Co.png) 
  
 <!--more-->
 
@@ -17,7 +17,7 @@ RABBIT supports various state-of-the-art multi-lens structured cameras as listed
 
 Manufacture|Tetracam | Micasense Rededge | Parrot | FLIR
 :------------: |:------------: | :-------------: | :------------: | :------------:
- Camera|![](/RABBIT/MCA_12.png) |![](/RABBIT/Altum.png)|![](/RABBIT/Sequoia.png) |![](/RABBIT/FLIR_DUO_PRO_R.png) 
+ Camera|![](/Images/MCA_12.png) |![](/Images/Altum.png)|![](/Images/Sequoia.png) |![](/Images/FLIR_DUO_PRO_R.png) 
  Model|MCA-4, MCA-6, MCA-12|MX, Altum|Sequoia|Duo Pro R
  Spectral| BLU, GRE, RED, REG, NIR|BLU, GRE, RED, REG, NIR| GRE, RED, REG, NIR|RGB + TIR
 
@@ -37,13 +37,13 @@ Manufacture|Tetracam | Micasense Rededge | Parrot | FLIR
 
 AT| PT| EPT
 :------------: | :-------------: | :-------------:
- ![](/RABBIT/AT.png) |![](/RABBIT/PT.png)|![](/RABBIT/EPT.png)
+ ![](/Images/AT.png) |![](/Images/PT.png)|![](/Images/EPT.png)
 ### 3. High Accuracy
  RABBIT can achieve 0.2-0.7 pixels band co-registration accuracy.
  
 MCA-12| Altum| Sequoia|Duo Pro R
 :------------: | :-------------: | :-------------:| :-------------:
-![](/RABBIT/Accuracy_MCA.png)|![](/RABBIT/Accuracy_Altum.png)|![](/RABBIT/Accuracy_Sequoia.png)|![](/RABBIT/Accuracy_TIR.png)
+![](/Images/Accuracy_MCA.png)|![](/Images/Accuracy_Altum.png)|![](/Images/Accuracy_Sequoia.png)|![](/Images/Accuracy_TIR.png)
 ### 4. High Efficiency
 RABBIT can run under multi-thread CPU or GPU. The comparisons of processing efficiency are listed in the following table.	
 
@@ -60,8 +60,8 @@ Image Resolution| 1280 X 1024 | 2064 X 1544 | 1280 X 960 | 640 X 512
 ### 4. Results
 Camera|MCA-12 | Altum| Sequoia | Duo Pro R
 :------------: |:------------: | :-------------: | :------------: | :------------:
- Original|![](/RABBIT/MCA_Original.gif) |![](/RABBIT/Altum_Original.gif)|![](/RABBIT/Sequoia_Original.gif) |![](/RABBIT/FLIR_Original.gif) 
- RABBIT |![](/RABBIT/MCA_RABBIT.gif) |![](/RABBIT/Altum_RABBIT.gif)|![](/RABBIT/Sequoia_RABBIT.gif) |![](/RABBIT/FLIR_RABBIT.gif) 
+ Original|![](/Images/MCA_Original.gif) |![](/Images/Altum_Original.gif)|![](/Images/Sequoia_Original.gif) |![](/Images/FLIR_Original.gif) 
+ RABBIT |![](/Images/MCA_RABBIT.gif) |![](/Images/Altum_RABBIT.gif)|![](/Images/Sequoia_RABBIT.gif) |![](/Images/FLIR_RABBIT.gif) 
 
 ## How to Use
 RABBIT is easy to use within three simple steps.
@@ -83,7 +83,7 @@ All images are loded and only master bands are shown on the left pannel. Click t
 
 Chose Camera Model | Select Image Patch | Run RABBIT
 :------------: | :-------------: | :------------:
- ![](/RABBIT/NewPorject_1.png)|![](/RABBIT/NewPorject_2.png)|![](/RABBIT/Run.png) 
+ ![](/Images/NewPorject_1.png)|![](/Images/NewPorject_2.png)|![](/Images/Run.png) 
 ### 4. Settings<br>
 **4.1 Feature Points**
   The default value is 1% of the image resolution. Change to a higher or lower value to increase matching reliablity or reduce processing time. However, we do not recommend adjusting it, because:
@@ -106,7 +106,7 @@ We use **Alea GPU commuity** for GPU accelerating, see what kinds of GPU cards a
 
 Setting | Accuracy of one group
 :------------: | :-------------: | 
- ![](/RABBIT/Setting_1.png) |![](/RABBIT/Setting_2.png)|
+ ![](/Images/Setting_1.png) |![](/Images/Setting_2.png)|
 ## Publications 
 If RABBIT help in your research/projects, please consider citing the following papers. 
 
