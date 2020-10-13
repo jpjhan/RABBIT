@@ -116,8 +116,6 @@ If RABBIT help in your research/projects, please consider citing the following p
 [Jhan, J.-P., Rau, J.-Y., 2020. A generalized tool for accurate and efficient multi-lens multispectral camera image registration. IEEE Transactions of Geoscience and Remote Sensing, under review]()
 
 ## Download
-
-[RABBIT](https://github.com/jpjhan/RABBIT/tree/master)
 [Sample Dataset](https://reurl.cc/WdevD9) 
 
 ## Contacts
