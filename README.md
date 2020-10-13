@@ -1,8 +1,6 @@
----
-title: A generalized tool for accurate and efficient multi-lens multispectral camera image registration
-abbrlink: 9e3485fc
-date: 2020-08-08 00:00:00
----
+
+A generalized tool for accurate and efficient multi-lens multispectral camera image registration
+
 
 Due to multi-lens camera utilizes each lens to record separate heterogeneous images, such as visible (RGB), multispectral (MS), or thermal (TIR) information, the differences of viewpoints and lens distortion leading to significant ghost effects of original images. To recover one-sensor geometry for precise spectral measurements, it requires band co-registration processing to correct the misregistration errors (MREs).
 
