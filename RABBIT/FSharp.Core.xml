@@ -4019,6 +4019,7 @@
 </member>
 <member name="M:Microsoft.FSharp.Reflection.FSharpType.MakeTupleType(System.Reflection.Assembly,System.Type[])">
  <summary>Returns a <c>System.Type</c> representing an F# tuple type with the given element types</summary>
+ <param name="asm">Runtime assembly containing System.Tuple definitions.</param>
  <param name="types">An array of types for the tuple elements.</param>
  <returns>The type representing the tuple containing the input elements.</returns>
 </member>
@@ -4029,6 +4030,7 @@
 </member>
 <member name="M:Microsoft.FSharp.Reflection.FSharpType.MakeStructTupleType(System.Reflection.Assembly,System.Type[])">
  <summary>Returns a <c>System.Type</c> representing an F# struct tuple type with the given element types</summary>
+ <param name="asm">Runtime assembly containing System.ValueTuple definitions.</param>
  <param name="types">An array of types for the tuple elements.</param>
  <returns>The type representing the struct tuple containing the input elements.</returns>
 </member>
@@ -4923,6 +4925,12 @@
  <param name="elements">The list of elements of the tuple.</param>
  <returns>The resulting expression.</returns>
 </member>
+<member name="M:Microsoft.FSharp.Quotations.FSharpExpr.NewStructTuple(System.Reflection.Assembly,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})">
+ <summary>Builds an expression that represents the creation of an F# tuple value</summary>
+ <param name="asm">Runtime assembly containing System.ValueTuple definitions.</param>
+ <param name="elements">The list of elements of the tuple.</param>
+ <returns>The resulting expression.</returns>
+</member>
 <member name="M:Microsoft.FSharp.Quotations.FSharpExpr.NewRecord(System.Type,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})">
  <summary>Builds record-construction expressions </summary>
  <param name="recordType">The type of record.</param>
@@ -5335,6 +5343,11 @@
  <summary>An active pattern to recognize expressions that represent the read of a static or instance property, or a non-function value declared in a module</summary>
  <param name="input">The input expression to match against.</param>
  <returns>(Expr option * PropertyInfo * Expr list) option</returns>
+</member>
+<member name="M:Microsoft.FSharp.Quotations.PatternsModule.NewStructTuplePattern(Microsoft.FSharp.Quotations.FSharpExpr)">
+ <summary>An active pattern to recognize expressions that represent construction of struct tuple values</summary>
+ <param name="input">The input expression to match against.</param>
+ <returns>(Expr list) option</returns>
 </member>
 <member name="M:Microsoft.FSharp.Quotations.PatternsModule.NewTuplePattern(Microsoft.FSharp.Quotations.FSharpExpr)">
  <summary>An active pattern to recognize expressions that represent construction of tuple values</summary>
@@ -7803,6 +7816,9 @@
  of this type, or the notation <c>arr.[x]</c> to get/set array
  values.</remarks>
 </member>
+<member name="T:Microsoft.FSharp.Core.uint">
+ <summary>An abbreviation for the CLI type <c>System.UInt32</c>.</summary>
+</member>
 <member name="T:Microsoft.FSharp.Core.int">
  <summary>An abbreviation for the CLI type <c>System.Int32</c>.</summary>
 </member>
@@ -9541,6 +9557,14 @@
  <summary>Converts the argument to a particular enum type.</summary>
  <param name="value">The input value.</param>
  <returns>The converted enum type.</returns>
+</member>
+<member name="M:Microsoft.FSharp.Core.Operators.ToUInt``1(``0)">
+ <summary>Converts the argument to an unsigned 32-bit integer. This is a direct conversion for all 
+ primitive numeric types. For strings, the input is converted using <c>UInt32.Parse()</c>  
+ with InvariantCulture settings. Otherwise the operation requires an appropriate
+ static conversion method on the input type.</summary>
+ <param name="value">The input value.</param>
+ <returns>The converted int</returns>
 </member>
 <member name="M:Microsoft.FSharp.Core.Operators.ToInt``1(``0)">
  <summary>Converts the argument to signed 32-bit integer. This is a direct conversion for all 
