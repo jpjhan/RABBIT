@@ -98,14 +98,16 @@ If all lenses of camera are highly synchronized, have same shutter speed, and th
 
 ** Tips: Choose one group of images that have rich texture and high contrast for correction.
 
+Setting | Accuracy of one group
+:------------: | :-------------: | 
+ ![](/Images/Setting_1.png) |![](/Images/Setting_2.png)|
+ 
 **4.3 CPU vs. GPU**
 By default, RABBIT detects your most poweful GPU device for increasing the processing efficincy. 
 
 We use **Alea GPU commuity** for GPU accelerating, see what kinds of GPU cards are supported in [Alea GPU](http://www.aleagpu.com/release/3_0_4/doc/license.html)
 
-Setting | Accuracy of one group
-:------------: | :-------------: | 
- ![](/Images/Setting_1.png) |![](/Images/Setting_2.png)|
+ 
 ## Publications 
 If RABBIT help in your research/projects, please consider citing the following papers. 
 
