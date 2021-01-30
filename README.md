@@ -113,8 +113,6 @@ If RABBIT help in your research/projects, please consider citing the following p
 
 [Jhan, J.-P., Rau, J.-Y., Haala, N., 2018. Robust and adaptive band-to-band image transform of UAS miniature multi-lens multispectral camera. ISPRS Journal of Photogrammetry and Remote Sensing 137, 47-60.](https://doi.org/10.1016/j.isprsjprs.2017.12.009)
 
-[Jhan, J.-P., Rau, J.-Y., 2020. A generalized tool for accurate and efficient multi-lens multispectral camera image registration. IEEE Transactions of Geoscience and Remote Sensing, under review]()
-
 ## Download
 [Sample Dataset](https://reurl.cc/WdevD9) 
 
