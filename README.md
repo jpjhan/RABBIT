@@ -90,7 +90,7 @@ Chose Camera Model | Select Image Patch | Run RABBIT
   The default value is 2% of the image resolution. Change to a higher or lower value to increase matching reliablity or reduce processing time. However, we do not recommend adjusting it, because a higher value of feature points will not siginficantly affect the processing time in GPU mode, but it does in CPU mode.
   
 **4.2 Independent vs. Batch**
-**Independent** is to conduct N-SURF matching and MPT on each group of images, which can obtain more accurate and reliable reuslts.
+**Independent** is to conduct N-SURF matching and EPT on each group of images, which can obtain more accurate and reliable results.
 **Batch** is to use same coefficients from one corrected group of images, which can achive ultra-speed processing efficiency. 
 
 ***When to use batch mode***
